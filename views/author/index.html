@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{title}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/uikit.min.css" />
+        <script src="../../js/uikit.min.js"></script>
+        <script src="../../js/uikit-icons.min.js"></script>
+        <script src="../../js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <div>
+
+            <h1 class="uk-heading-line uk-text-center"><span>{{title}}</span></h1>
+
+            <div class="uk-overflow-auto">
+                <table class="uk-table uk-table-small uk-table-divider">
+                    <thead>
+                        <tr>
+                            <th>author</th>
+                            <th>nationality</th>
+                            <th>birth_year</th>
+                            <th>fields</th>
+                            <th>Books</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#author}}
+                        <tr>
+                            <td>{{author}}</td>
+                            <td>{{nationality}}</td>
+                            <td>{{birth_year}}</td>
+                            <td>{{fields}}</td>
+                            <td>{{books}}</td>
+                        </tr>
+                        {{/author}}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </body>
+</html>
